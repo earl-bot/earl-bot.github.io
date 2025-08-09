@@ -1,112 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Earl Bot SMS Opt-In | Sakena Nixon Enterprises</title>
-  <meta name="description" content="Official SMS opt-in for Earl Bot Alerts by Sakena Nixon Enterprises.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --bg:#0b0b0c; --panel:#141417; --text:#eef0f6; --muted:#b8bcc9; --gold:#d4af37; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:'Montserrat',system-ui,Segoe UI,Roboto,sans-serif; background:linear-gradient(135deg,#000,#111); color:var(--text); }
-    a { color: #ffd98a; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header { position:sticky; top:0; background:#0f0f12cc; backdrop-filter: blur(8px); border-bottom:1px solid #222; padding:12px 16px; }
-    .nav { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .brand img { width:60px; height:60px; object-fit:contain; filter: drop-shadow(0 2px 10px rgba(212,175,55,.35)); }
-    .brand h1 { margin:0; font-size:1.3rem; color:var(--gold); }
-    .links a { margin-left:14px; }
-    .hero { padding:32px 16px 18px; border-bottom:1px solid #222; }
-    .hero-inner { max-width:1100px; margin:0 auto; display:grid; gap:16px; grid-template-columns:1.1fr .9fr; }
-    @media (max-width:900px){ .hero-inner { grid-template-columns:1fr; } }
-    h2 { margin:8px 0; font-size:2rem; color:var(--gold); }
-    p.lead { color:var(--muted); max-width:720px; }
-    ul.identity { list-style:none; padding:0; margin:10px 0 0; }
-    ul.identity li { margin:4px 0; }
-    .card { background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03)); border:1px solid rgba(212,175,55,.35); border-radius:14px; padding:16px; box-shadow:0 12px 40px rgba(0,0,0,.35); }
-    .optin { max-width:520px; margin:26px auto; }
-    form input, form button { width:100%; padding:12px; border-radius:10px; border:1px solid #2a2a33; background:#0f0f12; color:var(--text); font-size:1rem; }
-    form input + input { margin-top:10px; }
-    form .consent { display:flex; gap:10px; margin:12px 0; font-size:.95rem; color:var(--muted); }
-    form button { background:linear-gradient(180deg,#f3d47a,var(--gold)); color:#1a1a1a; font-weight:700; cursor:pointer; border:1px solid var(--gold); box-shadow:0 6px 20px rgba(243,212,122,.28); }
-    .about { padding:36px 16px; background:rgba(255,255,255,.03); border-top:1px solid rgba(212,175,55,.25); }
-    .about-inner { max-width:900px; margin:0 auto; text-align:center; }
-    footer { padding:22px 16px; border-top:1px solid #222; background:#0f0f12; color:#b9b9c6; text-align:center; }
-    footer a { margin:0 6px; }
-    small.note { color:var(--muted); display:block; margin-top:8px; }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="nav">
-      <div class="brand">
-        <!-- Change src if your logo file is named differently -->
-        <img src="sakena-nixon-logo.jpeg" alt="Sakena Nixon Enterprises Logo">
-        <h1>Sakena Nixon Enterprises</h1>
-      </div>
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="sms-terms.html">SMS Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <!-- README link on GitHub (shows project concept) -->
-        <a href="https://github.com/earl-bot/earl-bot.github.io#readme" target="_blank" rel="noopener">README</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <h2>Earl Bot Alerts</h2>
-        <p class="lead">Educational, low‑volume stock alerts and system notifications from our in‑house automation tool, <strong>Earl Bullish Engulfing Trader</strong>.</p>
-        <ul class="identity">
-          <li><strong>Business:</strong> Sakena Nixon Enterprises</li>
-          <li><strong>Address:</strong> 1827 Swan Drive, Macon, GA 31204, USA</li>
-          <li><strong>Phone:</strong> <a href="tel:+18444109350">(844) 410‑9350</a></li>
-          <li><strong>Email:</strong> <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></li>
-        </ul>
-        <small class="note">By opting in you agree to our <a href="sms-terms.html">SMS Terms</a>. Msg & data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help.</small>
-      </div>
-
-      <div class="card optin">
-        <h3 style="margin:0 0 8px">Opt‑In to SMS</h3>
-        <p class="note">US/Canada numbers only.</p>
-        <!-- Replace YOUR_FORM_ID with your Formspree ID when ready -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="text" name="name" placeholder="Full Name" required>
-          <input type="tel" name="phone" placeholder="+1 555 555 5555" required>
-          <label class="consent">
-            <input type="checkbox" required>
-            I consent to receive SMS messages per the <a href="sms-terms.html">SMS Terms</a> and <a href="privacy.html">Privacy Policy</a>.
-          </label>
-          <button type="submit">Submit Opt‑In</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about-earlbot">
-    <div class="about-inner">
-      <h2>About Earl Bot</h2>
-      <p>Earl Bot is a custom-built automation tool by <strong>Sakena Nixon Enterprises</strong> for educational purposes. It sends real‑time alerts based on market pattern recognition, including the <em>Bullish Engulfing</em> candlestick pattern. Alerts are intended to help users learn technical analysis. They are <strong>not financial advice</strong>.</p>
-      <p style="margin-top:14px;">
-        Want the deeper project overview? Read our
-        <a href="https://github.com/earl-bot/earl-bot.github.io#readme" target="_blank" rel="noopener">GitHub README</a>.
-      </p>
-    </div>
-  </section>
-
-  <footer>
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>SNE Live Test</title></head>
+  <body style="font:16px/1.5 system-ui;padding:2rem;background:#000;color:#fff">
+    <h1>It works 🎉</h1>
+    <p>This is the GitHub Pages root for <strong>earl-bot.github.io</strong>.</p>
     <p>
-      © 2025 Sakena Nixon Enterprises •
       <a href="sms-terms.html">SMS Terms</a> •
-      <a href="privacy.html">Privacy Policy</a> •
-      <a href="terms.html">Terms of Service</a> •
+      <a href="privacy.html">Privacy</a> •
+      <a href="terms.html">Terms</a> •
       <a href="https://github.com/earl-bot/earl-bot.github.io#readme" target="_blank" rel="noopener">README</a>
     </p>
-  </footer>
-</body>
+  </body>
 </html>
