@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMS Terms — Sakena Nixon Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Montserrat',sans-serif;background:linear-gradient(135deg,#000,#111);color:#fff}
+    main{max-width:900px;margin:40px auto;padding:0 20px}
+    h1{color:gold}
+    a{color:gold;text-decoration:none}
+    header,footer{text-align:center;padding:16px}
+    footer{color:#aaa}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,215,0,.25);border-radius:16px;padding:20px;box-shadow:0 0 20px rgba(255,215,0,.15)}
+  </style>
+</head>
+<body>
+  <header><a href="index.html" style="color:gold;text-decoration:none">← Back to Home</a></header>
+  <main>
+    <h1>SMS Terms & Opt‑In Policy</h1>
+    <div class="card">
+      <p><strong>Program:</strong> Earl Bot Alerts</p>
+      <p><strong>Brand:</strong> Sakena Nixon Enterprises</p>
+      <p><strong>Contact:</strong> (844) 410‑9350 • <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></p>
+      <p><em>Last updated:</em> <span id="date"></span></p>
+      <h2>Opt‑In</h2>
+      <p>Opt in via the form on our <a href="index.html#optin">homepage</a>. By opting in, you agree to receive SMS messages at the number you provide.</p>
+      <h2>Message Frequency</h2>
+      <p>Up to 10 messages per month.</p>
+      <h2>Fees</h2>
+      <p>Message and data rates may apply.</p>
+      <h2>Opt‑Out</h2>
+      <p>Reply <strong>STOP</strong> to any message to cancel. You’ll receive a final confirmation text.</p>
+      <h2>Help</h2>
+      <p>Reply <strong>HELP</strong> for assistance or email us.</p>
+      <h2>Eligibility</h2>
+      <p>US/Canada mobile numbers only. You must be the account holder or have permission to enroll the number.</p>
+      <h2>Data & Privacy</h2>
+      <p>Handled under our <a href="privacy.html">Privacy Policy</a>. Limited data is shared with carriers/providers to deliver messages.</p>
+      <h2>Content</h2>
+      <p>Educational notifications only; not financial advice. Prohibited content categories are not sent.</p>
+      <h2>Support</h2>
+      <p>Email <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a>. Typical response within 2 business days.</p>
+    </div>
+  </main>
+  <footer>© <span id="year"></span> Sakena Nixon Enterprises</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toISOString().slice(0,10);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
