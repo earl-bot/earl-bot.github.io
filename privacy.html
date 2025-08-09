@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Sakena Nixon Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Montserrat',sans-serif;background:linear-gradient(135deg,#000,#111);color:#fff}
+    main{max-width:900px;margin:40px auto;padding:0 20px}
+    h1{color:gold}
+    a{color:gold;text-decoration:none}
+    header,footer{text-align:center;padding:16px}
+    footer{color:#aaa}
+    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,215,0,.25);border-radius:16px;padding:20px;box-shadow:0 0 20px rgba(255,215,0,.15)}
+  </style>
+</head>
+<body>
+  <header><a href="index.html" style="color:gold;text-decoration:none">← Back to Home</a></header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <div class="card">
+      <p><strong>Business:</strong> Sakena Nixon Enterprises</p>
+      <p><strong>Address:</strong> 1827 Swan Drive, Macon, GA 31204, USA</p>
+      <p><strong>Phone:</strong> (844) 410‑9350 • <strong>Email:</strong> <a href="mailto:earlengulfingbot@gmail.com">earlengulfingbot@gmail.com</a></p>
+      <p><em>Last updated:</em> <span id="date"></span></p>
+      <h2>Information We Collect</h2>
+      <p>We collect your name and mobile number when you opt in to receive SMS alerts. We do not sell your personal information.</p>
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>To send educational SMS alerts and system notifications</li>
+        <li>To provide support and respond to inquiries</li>
+        <li>To comply with legal and carrier requirements</li>
+      </ul>
+      <h2>Sharing</h2>
+      <p>We do not share personal data except with processors that help deliver messages (e.g., carriers) or when required by law.</p>
+      <h2>Security</h2>
+      <p>We use reasonable safeguards. No method of transmission or storage is completely secure.</p>
+      <h2>Your Choices</h2>
+      <ul>
+        <li>Reply <strong>STOP</strong> to any message to opt out</li>
+        <li>Reply <strong>HELP</strong> for assistance</li>
+        <li>Email us to update or delete your information</li>
+      </ul>
+    </div>
+  </main>
+  <footer>© <span id="year"></span> Sakena Nixon Enterprises</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toISOString().slice(0,10);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
